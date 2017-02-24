@@ -14,7 +14,7 @@ Simple current time command output.
 
 # Prerequisites
 - [go](https://golang.org/) [[download]](https://golang.org/dl/)
-- set your $GOPATH
+- export PATH=$PATH:$GOPATH/bin
 
 # Install
 ```Shell
