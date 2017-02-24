@@ -13,7 +13,7 @@ Simple current time command output.
 ```
 
 # Prerequisites
-- [go](https://golang.org/) [download](https://golang.org/dl/)
+- [go](https://golang.org/) [[download]](https://golang.org/dl/)
 - set your $GOPATH
 
 # Install
