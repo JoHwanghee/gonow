@@ -1,7 +1,7 @@
 # gonow
 Simple current time command output.
 
-```Shell
+```sh
 go get github.com/johwanghee/gonow
 gonow
 ```
