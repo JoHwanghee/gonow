@@ -32,8 +32,8 @@ options
 	or golang time format https://golang.org/pkg/time/#pkg-constants
 	default option print
 	time.Now()
-	time.Now().Format("2006-01-02T15:04:05.000")
-	time.Now().Format("20060102150405.000")
+	time.Now().Format("2006-01-02T15:04:05.000Z07:00")
+	time.Now().Format("20060102150405.000Z07:00")
 `
 	yyyy = "2006"
 	yy   = "06"
@@ -54,8 +54,8 @@ func main() {
 	flag.Parse()
 	if *format == "" {
 		fmt.Println(time.Now())
-		fmt.Println(time.Now().Format("2006-01-02T15:04:05.000"))
-		fmt.Println(time.Now().Format("20060102150405.000"))
+		fmt.Println(time.Now().Format("2006-01-02T15:04:05.000Z07:00"))
+		fmt.Println(time.Now().Format("20060102150405.000Z07:00"))
 	} else {
 		var layout = strings.Replace(*format, "yyyy", yyyy, -1)
 		layout = strings.Replace(layout, "yy", yy, -1)
